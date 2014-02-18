@@ -1,0 +1,525 @@
+/**
+ * @author MK
+ */
+body {
+    background-color: #F6F8F8;
+    font-size: 1em;
+    font-family: 'UbuntuRegular', arial, sans-serif;
+    color:#333;
+}
+
+a {
+    text-decoration: none;
+    color:#00A3CA;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/**
+ * Pour "clear" les floats sans avoir a rajouter d'elements après
+ */
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+
+
+/**
+ * Elements de formulaire
+ */
+div.item {
+    margin-bottom: 35px;
+}
+
+div.item label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:#555;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+div.item input[type="text"],
+div.item input[type="password"] {
+    display: block;
+    font-size: 1.125em;
+    border-radius:1px;
+    border: 1px solid #ccc;
+    padding:0.4em;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.10); 
+}
+
+div.item input[type="text"]:focus,
+div.item input[type="password"]:focus {
+    background-color: #FFFFE0;
+    border-color:#bbb;
+}
+
+div.go {
+    padding-bottom:35px;
+    text-align: center;
+}
+
+div.go input[type="submit"] {
+    padding:15px 0;
+    width: 150px;
+    font-size: 1.5em;
+    font-family: 'UbuntuTitlingBold', verdana, sans-serif;
+
+    background: #68b12f; 
+    background: -moz-linear-gradient(top, #68b12f 0%, #50911e 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#68b12f), color-stop(100%,#50911e));
+    background: -webkit-linear-gradient(top, #68b12f 0%,#50911e 100%); 
+    background: -o-linear-gradient(top, #68b12f 0%,#50911e 100%);
+    background: -ms-linear-gradient(top, #68b12f 0%,#50911e 100%);
+    background: linear-gradient(to bottom, #68b12f 0%,#50911e 100%);
+
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    color: white;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+
+div.go input[type="submit"]:hover {
+    opacity:.85;
+    cursor: pointer;
+}
+
+div.go input[type="submit"]:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset;
+    -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+
+
+
+/**
+ * Header
+ */
+#header {
+    height:40px;
+    line-height: 40px;
+
+    box-shadow: 1px 3px 3px rgba(0,0,0,.15);
+
+    background: #499bea; /* Old browsers */
+    background: -moz-linear-gradient(top, #499bea 0%, #207ce5 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#499bea), color-stop(100%,#207ce5)); 
+    background: -webkit-linear-gradient(top, #499bea 0%,#207ce5 100%); 
+    background: -o-linear-gradient(top, #499bea 0%,#207ce5 100%); 
+    background: -ms-linear-gradient(top, #499bea 0%,#207ce5 100%);
+    background: linear-gradient(to bottom, #499bea 0%,#207ce5 100%);
+}
+
+#header nav.inner {
+    width:960px;
+    margin: 0 auto;
+}
+
+#header a {
+    display: block;
+    color:#fff;
+    padding:0 15px;
+}
+
+#header a:hover {
+    text-decoration: none;
+    background-color: #0D59AA;
+}
+
+#header a:active {
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.15) inset;
+    -moz-box-shadow: 0 0 10px 5px rgba(0,0,0,.15) inset;
+}
+
+#logo {
+    float: left;
+    font-size: 1.5em;
+    font-family: 'UbuntuTitlingBold', verdana, sans-serif;
+}
+
+#toplinks {
+    float: right;
+}
+
+#toplinks li {
+    display: inline-block;
+}
+
+
+
+/**
+ * Wrapper pour le contenu
+ */
+#wrap {
+    width:960px;
+    margin:40px auto;
+    border: 1px solid #ccc;
+    clear: both;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#wrap div.titre {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 25px;
+    background-color: #eee;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#wrap h1 {
+    display: inline-block;
+    font-family: 'UbuntuTitlingBold', helvetica, sans-serif;
+    font-size: 2.5em;
+    color:#777;
+}
+
+#wrap div.big {
+    text-align: center;
+    font-size: 150%;
+}
+
+#wrap h1 span.compl {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+
+/**
+ * Formulaire de recherche
+ */
+#search {
+    padding:20px;
+}
+
+#search h1 {
+
+}
+
+#search div.gauche,
+#search div.droit {
+    width:410px;
+    padding:20px 25px;
+}
+
+#search div.gauche {
+    float: left;
+}
+
+#search div.droit {
+    float: right;
+}
+
+#search input[type="text"] {
+    width:380px;
+}
+
+#search div.select {
+    overflow:hidden;
+    padding:0; 
+    margin:0;
+    background: white url("../img/select.png") no-repeat center right;
+    width:12em; 
+    border-radius:1px;
+    /*box-shadow: 0 1px 3px rgba(0,0,0,0.2);*/
+    border: solid 1px #ccc; 
+    width:400px;
+}
+
+#search div.select select {
+    width:110%;
+    background-color:transparent;
+    background-image:none;
+    -webkit-appearance: none;
+    border:none;
+    box-shadow:none;
+    padding:0.3em 0.5em;
+    font-size: 1.125em;
+    color:#333;
+    cursor: pointer;
+}
+
+#search div.go {
+    clear: both;
+}
+
+
+
+
+
+/**
+ * Liste de communes
+ * Utilisé pour lees resultats de recherche
+ * et la liste de favoris
+ */
+#liste {
+    width:560px;
+    float: left;
+}
+
+#liste article {
+    padding: 15px 18px;
+    border-bottom: 1px solid #DCDCDC;
+    border-right: 1px solid #DCDCDC;
+    position: relative;
+}
+
+#liste article:hover {
+    background-color: lightyellow;
+    cursor: pointer;
+}
+
+#liste h2 {
+    display: inline;
+}
+
+#liste h2 a {
+    color:#333;
+    font-size: 2em;
+}
+
+#liste h2 a:hover {
+    color:#000;
+    text-decoration: none;
+}
+
+#liste h2 a span.compl {
+    display: block;
+    font-size: 13px;
+    color:#666;
+    margin-top: 10px;
+}
+
+#liste div.insee {
+    float: right;
+    color:#555;
+    font-size: 1.5em;
+}
+
+#liste div.bottom {
+    clear: both;
+    margin-top: 35px;
+}
+
+#liste div.dep {
+    float: left;
+}
+
+#liste div.coord {
+    float: right;
+    font-size: 13px;
+    font-style: italic;
+    color:#555;
+    margin-top:5px;
+}
+
+
+
+
+/**
+ * Carte
+ */
+#map {
+    width:400px;
+    float: right;
+}
+
+#lacarte {
+    width:400px;
+    height:400px;
+}
+
+#back {
+    text-align: center;
+    padding:20px 0;
+}
+
+
+/**
+ * Pagination
+ */
+#pagination {
+    text-align: center;
+    padding: 50px 0;
+    clear: both;
+}
+
+#pagination li {
+    display: inline;
+    margin-right: 5px;
+}
+
+#pagination li.vide {
+    padding:10px 13px;
+}
+
+#pagination li a {
+    padding:10px 13px;
+    color:#333;
+    border-radius: 5px;
+}
+
+#pagination li a:hover {
+    background: #ddd; 
+    text-decoration: none;
+}
+
+#pagination li a.courrante {
+    background: #227EE5; 
+    color:#fff;
+}
+
+#pagination li a.courrante:hover {
+    background-color: #0D59AA;
+}
+
+
+
+
+
+/**
+ * Details d'une commune
+ */
+#details {
+    width:560px;
+    float: left;
+}
+
+#details table {
+    width:100%;
+}
+
+#details td {
+    padding:20px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#details td.gr {
+    background-color: #f9f9f9;
+    color:#888;
+    font-weight: bold;
+}
+
+#details tr:hover td {
+    background-color: lightyellow;
+}
+
+#fab-btn {
+    float: right;
+    padding:10px 20px;
+    margin-top: 1px;
+    display: inline-block;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); 
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+    background: -o-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); 
+    background: linear-gradient(to bottom, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+    border: 1px solid #ccc;
+    color:#333;
+    cursor: pointer; 
+    border-radius: 15px;    
+}
+
+#fab-btn:hover {
+    text-decoration: none;
+    color:#000;
+    border-color: #aaa;
+}
+
+
+
+
+/**
+ * Favoris
+ */
+#liste article div.delete {
+    position: absolute;
+    top:0;
+    left:-30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-family: 'UbuntuTitlingBold', sans-serif;
+    background-color: #BA4646;
+    color:#fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: none;
+}
+
+#liste article div.delete a {
+    color:#fff;
+    text-decoration: none;
+    display: block;
+}
+
+#liste article:hover div.delete {
+    display:block;
+}
+
+#liste article div.delete:hover {
+    background-color: #CE0000;
+}
+
+#blank {
+    clear: both;
+    padding: 50px 0;
+}
+
+
+
+/**
+ * Message
+ */
+#message {
+    padding:50px 30px;
+    line-height: 1.5em;
+}
+
+#message ul {
+    line-height: 2em;
+    list-style-type: square;
+    padding:0 20px;
+    margin-bottom: 30px;
+}
+
+
+
+/**
+ * Formulaire d'nscription et connexion
+ */
+#membre {
+    width:400px;
+    margin: 30px auto;
+}
+
+#membre input[type="text"],
+#membre input[type="password"] {
+    width:384px;
+}
